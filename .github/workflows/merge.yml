@@ -1,0 +1,8 @@
+- name: unir2 auto merge 
+  uses: seemethere/unir2@v0.0.1
+  on:
+    pull_request:
+      types: [opened, reopened, synchronize]
+    pull_request_review:
+      types: [submitted]
+    status:
