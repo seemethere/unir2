@@ -4,9 +4,9 @@ import * as github from '@actions/github';
 async function run() {
   try {
     const token = core.getInput("token");
-    const gh = new github.GitHub(token);
+    const octokit = new github.GitHub(token);
     const context = github.context;
-    gh.pulls.merge({
+    octokit.pulls.merge({
       owner: context.repo.owner,
       repo: context.repo.repo,
       number: context.issue.number
