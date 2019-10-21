@@ -1,10 +1,9 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-inputs:
-  myInput:              # change this
-    description: 'input description here'
-    default: 'default value if applicable'
+name: 'unir2'
+description: 'A simplistic merge bot'
+author: 'seemethere'
 runs:
   using: 'node12'
   main: 'lib/main.js'
+branding:
+  icon: "git-pull-request"
+  color: "blue"
